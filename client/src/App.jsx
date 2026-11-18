@@ -4,9 +4,7 @@ import TaskForm from "./components/TaskForm.jsx";
 import TaskItem from "./components/TaskItem.jsx";
 import "./App.css";
 
-const API_URL = (
-  import.meta.env.VITE_API_URL || "http://localhost:5000/api"
-).replace(/\/$/, "");
+const API_URL = "/api";
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
